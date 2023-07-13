@@ -1,0 +1,298 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin:0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+/* ------------ NAV BAR  ----------- */
+
+nav{
+    background-color:#82a4da;
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+}
+
+.logo{
+  width: 65px;
+  height: 65px;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+}
+
+ul{  
+    font-size: 18px;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 0;
+}
+
+li{
+    margin-right: 10px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+  }
+
+  a:link,a:visited {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+  }
+  
+  a:hover,a:active {
+    text-decoration: none;
+    color: darkblue;
+    padding: 10px;
+    background-color: white;
+    padding: 20px 10px;
+  }
+
+/* ------------ HEADER ----------- */
+
+.header_main_page {
+    background-image: url("https://img.freepik.com/free-photo/group-portrait-adorable-puppies_53876-64778.jpg?w=2000&t=st=1689240989~exp=1689241589~hmac=17e37b0d79efbadb5f2e40f96826a36484474f14fcc8858d94fbd4f64075158e");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 450px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: baseline;
+    padding-top: 1.5rem;
+    color: #040310;
+  background-color: #D3E5F5;
+
+}
+
+header {
+    /* background-size: cover; */
+    /* display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: baseline; */
+    padding-top: 1.5rem;
+    color: #040310;
+    min-width: 100%;
+}
+
+.header-container{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+/* ------------ MAIN SECTION ----------- */
+
+main{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: 75vw;
+}
+
+
+main section p{
+    line-height: 1.5;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    text-align: justify;
+    max-width: 85ch;
+}
+
+
+/* ------------- PICTURE GALLERY --------- */
+
+div.gallery {
+    border: 1px solid #ccc;
+  }
+  
+  div.gallery:hover {
+    border: 1px solid #777;
+  }
+  
+  div.gallery img {
+    width: 100%;
+    height: auto;
+  }
+  
+  div.desc {
+    padding: 15px;
+    text-align: center;
+  }
+  
+  * {
+    box-sizing: border-box;
+    border-radius: 5px;
+  }
+  
+  .responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+  }
+  
+  @media only screen and (max-width: 700px) {
+    .responsive {
+      width: 49.99999%;
+      margin: 6px 0;
+    }
+  }
+  
+  @media only screen and (max-width: 500px) {
+    .responsive {
+      width: 100%;
+    }
+  }
+  
+  .clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+
+
+/* ------------ FOOTER ----------- */
+
+footer{
+    height: 30px;
+    background-color: #82a4da;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    font-size: 10px;
+}
+
+
+/* ---------------------------- PARKS PAGE ------------------------------ */
+
+header h1 {
+    display: flex;
+    justify-content: center;
+}
+
+.article-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* ---------------------------- CONTACT PAGE ------------------------------ */
+
+
+.contact-image {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    border-radius: 7px;
+    box-shadow: 5px 5px 5px lightgray; 
+}
+
+
+ .contact-text-container{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .contact-text-body{
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+    padding: 1rem 1rem;
+    border: 1px solid #b5d5f23a;
+    background-color: #b5d5f23a;
+    border-radius: 7px;
+    box-shadow: 5px 5px 5px lightgray;
+  }
+
+main form {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  body main form h2 #messageTitle {
+    display: flex;
+    border-radius: 5px;
+    
+  }
+  
+  div #pet_name, #name, #email, #message {
+    background-color: lightgray;
+    border: none;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    /* max-width: 75vw; */
+    line-height: 20px;
+    margin: 8px 0;
+  }
+  
+  body main form button {
+    background-color: #82a4da;
+    color: white;
+    border: none;
+    padding: 5px 15px;
+    border-radius: 5px;
+    margin: 8px 0;
+    
+  }
+
+  form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 30px;
+    padding-top: 30px;
+  }
+  
+  form div{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-left: 30px;
+    margin-bottom: 20px;
+  }
+
+  form h2{
+    padding-left: 30px;
+  }
+
+  form div input, form div textarea{
+    width: 100%;
+    padding-left: 30px;
+  }
+  .form-button{
+    margin-left: 30px;
+  }
+
+ 
+  
