@@ -9,13 +9,28 @@
 </head>
 
 <body>
-    <nav>
+    <nav class="menu-parks-contact">
         <img class="logo" src="images/dog_181867.png" alt="Logo">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="parks.html">Parks</a></li>
-            <li><a href="contact.html">Contact Us</a></li>
-        </ul>
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <!-- Top Navigation Menu -->
+        <div class="topnav">
+            <a class="active">_</a>
+            <!-- Navigation links (hidden by default) -->
+            <div id="myLinks">
+                <a>
+                    <p></p>
+                </a>
+                <a href="index.html">Home</a>
+                <a href="parks.html">Parks</a>
+                <a href="contact.html">Contact Us</a>
+            </div>
+            <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </div>
     </nav>
 
 
@@ -37,8 +52,8 @@
                 </section>
             </div>
         </div>
-<p></p>
-        <form>
+        <p></p>
+        <form id="contactForm">
             <h2 id="messageTitle">Leave us your message</h2>
             <div>
                 <label for="name">Name of your pet</label>
@@ -58,11 +73,12 @@
             </div>
             <button class="form-button" type="submit">Submit</button>
         </form>
-<p></p>
+        <p></p>
     </main>
     <footer>
         &copy; 2023 Lisbon by Paws
     </footer>
+    <script src="script.js"></script>
 </body>
 
 </html>

@@ -54,7 +54,7 @@ a {
   
   a:hover,a:active {
     text-decoration: none;
-    color: darkblue;
+    color: #7991df;
     padding: 10px;
     background-color: white;
     padding: 20px 10px;
@@ -202,6 +202,53 @@ article div {
     padding-left: 20px;
     padding-right: 20px;
 }
+
+/* -------- NAV BAR - PARKS PAGE ------- */
+
+.topnav {
+    overflow: hidden;
+    position: absolute;
+    padding-left: 75px;
+  }
+  
+  /* Hide the links inside the navigation menu (except for logo/home) */
+  .topnav #myLinks {
+    display: none;
+    background-color: #c6c4c4;
+  }
+  
+  /* Style navigation menu links */
+  .topnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+    top: 10vh;
+  }
+  
+  /* Style the hamburger menu */
+  .topnav a.icon {
+    background: #82a4da;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  
+  /* Add a grey background color on mouse-over */
+  .topnav a:hover {
+    background-color: white;
+    color: #7991df;
+  }
+  
+  /* Style the active link (or home/logo) */
+  .active {
+    background-color: #82a4da;
+    color: white;
+  }
+
+
 
 
 /* ---------------------------- CONTACT PAGE ------------------------------ */
