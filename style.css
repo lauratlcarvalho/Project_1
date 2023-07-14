@@ -217,18 +217,42 @@ footer{
 
 /* ---------------------------- PARKS PAGE ------------------------------ */
 
-.header-parks-contact {
+.header-parks {
     background-image: url(Images/dog-bone.png);
-    display: flex;
-    justify-content: center;
     background-repeat: no-repeat;
     background-position: center;
-    height: 150px;
+    /* background-size: auto; */
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+    height: 250px;
     text-align: center;
+    margin-top: -50px;
+    margin-bottom: -50px;
+}
+
+.header-text-parks {
+  margin-top: 105px;
 }
       
 
+.header-contact {
+    background-image: url(Images/dog-bone.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    /* background-size: auto; */
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+    height: 250px;
+    text-align: center;
+    margin-top: -50px;
+    margin-bottom: -50px;
+}
 
+.header-text-contact {
+  margin-top: 105px;
+}
 
 
 
@@ -326,6 +350,7 @@ article div {
     border-radius: 3px;
     box-shadow: 5px 5px 5px lightgray;
   }
+
 
 main form {
     display: flex;
