@@ -8,7 +8,7 @@
 </head>
 <body>
     <nav>
-        <img class="logo" src="images/dog_181867.png" alt="Logo">
+        <img class="logo" src="images/dog-logo-colour.png" alt="Logo">
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="parks.html">Parks</a></li>
@@ -28,48 +28,75 @@
     </section>
 
     <section>
-        <div class="responsive">
-            <div class="gallery">
-              <a target="_blank" href="Images/park.jpeg">
-                <img src="Images/park.jpeg" alt="dog in a park" width="600" height="400">
-              </a>
-              <div class="desc">You can spend a wonderful day in the park with the people that you love</div>
-            </div>
-          </div>
-          
-          
-          <div class="responsive">
-            <div class="gallery">
-              <a target="_blank" href="Images/beach.jpeg">
-                <img src="Images/beach.jpeg" alt="dog in a beach" width="600" height="400">
-              </a>
-              <div class="desc">What about a relaxing day at the beach?</div>
-            </div>
-          </div>
-          
-          <div class="responsive">
-            <div class="gallery">
-              <a target="_blank" href="Images/restaurant.jpeg">
-                <img src="Images/restaurant.jpeg" alt="dog in a restaurant" width="600" height="400">
-              </a>
-              <div class="desc">Your four legged friend will love to spend time with you people watching in a cafe or bar</div>
-            </div>
-          </div>
-          
-          <div class="responsive">
-            <div class="gallery">
-              <a target="_blank" href="Images/store.jpeg">
-                <img src="Images/store.jpeg" alt="dog in front of a store" width="600" height="400">
-              </a>
-              <div class="desc">It's always a good idea to take your buddy with you when walking around and window shopping</div>
-            </div>
-          </div>
-          
-          <div class="clearfix"></div>
+
+<!-- Container for the image gallery -->
+<div class="container">
+
+    <!-- Full-width images with number text -->
+    <div class="mySlides">
+      <div class="numbertext">1 / 6</div>
+        <img src="Images/picnic.jpeg" style="width:100%">
+    </div>
+  
+    <div class="mySlides">
+      <div class="numbertext">2 / 6</div>
+        <img src="Images/corgi-walking.jpeg" style="width:100%">
+    </div>
+  
+    <div class="mySlides">
+      <div class="numbertext">3 / 6</div>
+        <img src="Images/dog-playing-with-water.jpeg" style="width:100%">
+    </div>
+  
+    <div class="mySlides">
+      <div class="numbertext">4 / 6</div>
+        <img src="Images/dog-with-ball.webp" style="width:100%">
+    </div>
+  
+    <div class="mySlides">
+      <div class="numbertext">5 / 6</div>
+        <img src="Images/person-walking-dogs.jpeg" style="width:100%">
+    </div>
+  
+    <div class="mySlides">
+      <div class="numbertext">6 / 6</div>
+        <img src="Images/girl-and-dog.webp" style="width:100%">
+    </div>
+  
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+  
+    <!-- Thumbnail images -->
+    <div class="row">
+      <div class="column">
+        <img class="demo cursor" src="Images/picnic.jpeg" style="width:100%" onclick="currentSlide(1)" alt="Picnic">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="Images/corgi-walking.jpeg" style="width:100%" onclick="currentSlide(2)" alt="Corgi walking">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="Images/dog-playing-with-water.jpeg" style="width:100%" onclick="currentSlide(3)" alt="Dog playing with water">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="Images/dog-with-ball.webp" style="width:100%" onclick="currentSlide(4)" alt="Dog with ball">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="Images/person-walking-dogs.jpeg" style="width:100%" onclick="currentSlide(5)" alt="Person walking several dogs">
+      </div>
+      <div class="column">
+        <img class="demo cursor" src="Images/girl-and-dog.webp" style="width:100%" onclick="currentSlide(6)" alt="Girl hugging dog">
+      </div>
+    </div>
+  </div>
+<p></p>
+
     </section>
 </main>
 <footer>
     &copy; 2023 Lisbon by Paws
 </footer>
+<script src="script.js"></script>
 </body>
 </html>

@@ -104,66 +104,100 @@ main{
     flex-direction: column;
     margin: 0 auto;
     max-width: 75vw;
+    text-align: center;
+    margin-top: 20px;
 }
 
 
 main section p{
     line-height: 1.5;
-    margin-top: 20px;
-    margin-bottom: 30px;
-    text-align: justify;
-    max-width: 85ch;
+    margin-top: 40px;
+    margin-bottom: 50px;
+    text-align: center;
+    
 }
 
 
 /* ------------- PICTURE GALLERY --------- */
 
-div.gallery {
-    border: 1px solid #ccc;
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+    position: relative;
   }
   
-  div.gallery:hover {
-    border: 1px solid #777;
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
   }
   
-  div.gallery img {
-    width: 100%;
-    height: auto;
+  /* Add a pointer when hovering over the thumbnail images */
+  .cursor {
+    cursor: pointer;
   }
   
-  div.desc {
-    padding: 15px;
-    text-align: center;
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
   }
   
-  * {
-    box-sizing: border-box;
-    border-radius: 5px;
+  /* Position the "next button" to the right and the "previous button" to the left */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+
+  .prev {
+    left: 0;
+    border-radius: 3px 0 0 3px;
   }
   
-  .responsive {
-    padding: 0 6px;
-    float: left;
-    width: 24.99999%;
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
   }
   
-  @media only screen and (max-width: 700px) {
-    .responsive {
-      width: 49.99999%;
-      margin: 6px 0;
-    }
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
   }
   
-  @media only screen and (max-width: 500px) {
-    .responsive {
-      width: 100%;
-    }
-  }
-  
-  .clearfix:after {
+  .row:after {
     content: "";
     display: table;
     clear: both;
+  }
+  
+  /* Six columns side by side */
+  .column {
+    float: left;
+    width: 16.66%;
+  }
+  
+  /* Add a transparency effect for thumnbail images */
+  .demo {
+    opacity: 0.6;
+  }
+  
+  .active,
+  .demo:hover {
+    opacity: 1;
   }
 
 
@@ -183,15 +217,24 @@ footer{
 
 /* ---------------------------- PARKS PAGE ------------------------------ */
 
-header h1 {
+.header-parks-contact {
+    background-image: url(Images/dog-bone.png);
     display: flex;
     justify-content: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 150px;
+    text-align: center;
 }
+      
+
+
+
+
 
 .article-container{
   display: flex;
   flex-direction: row;
-  justify-content: center;
   align-items: center;
   border-bottom: 3px dotted black;
   padding-top: 20px;
@@ -202,6 +245,7 @@ article div {
     padding-left: 20px;
     padding-right: 20px;
 }
+
 
 /* -------- NAV BAR - PARKS PAGE ------- */
 
